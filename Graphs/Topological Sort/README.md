@@ -10,8 +10,8 @@ c b
 a c
 
 file2.txt
-mad2104 cop3530 
-cop3337 cop3530 
+mad2104 cop3530
+cop3337 cop3530
 cop2210 cop3337
 
 file3.txt
