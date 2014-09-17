@@ -1,5 +1,6 @@
 
 
+
 public final class Sort{
 
 	public static void quicksort( int [] a ){
@@ -35,9 +36,16 @@ public final class Sort{
 			
 			
 			//recursively sort the two partitions
-			quicksort( a, left, i - 1 );
+			quicksort( a, left, i - 2);
 			quicksort( a, i, right );
 		}
+	}
+
+	//TODO
+	public static void quisortDuplicates(){
+		//if we want quicksort to handle duplicates one way is to partition the array 
+		//into 3 subarrays element less than the pivot, equal to the pivot (already sorted), and greater
+		//than the pivot
 	}
 	
 	public static void main(String []  args){
