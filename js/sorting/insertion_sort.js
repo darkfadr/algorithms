@@ -1,11 +1,11 @@
 (function(){
 
 	function InsertionSort(arr){
-		this.init(arr);
+		this.sort(arr);
 	}
 
 	InsertionSort.prototype = {
-		init: function(arr){
+		sort: function(arr){
 			var i,
 				j,
 				value,
