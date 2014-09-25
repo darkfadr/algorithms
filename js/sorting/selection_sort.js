@@ -1,17 +1,11 @@
 (function(){
 
 	function SelectionSort(arr){
-		this.init(arr);
+		this.sort(arr);
 	}
 
 	SelectionSort.prototype = {
-		swap: function(arr, first, last){
-			var temp = arr[first];
-
-			arr[first] 	= iarr[second];
-			arr[second] = temp;
-		},
-		init: function(arr){
+		sort: function(arr){
 			var i,
 				j,
 				min,
@@ -31,6 +25,12 @@
 			}
 
 			return arr;	
+		},
+		swap: function(arr, first, last){
+			var temp = arr[first];
+
+			arr[first] 	= iarr[second];
+			arr[second] = temp;
 		},
 		toString: function(arr){
 			console.dir(arr);

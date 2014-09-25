@@ -1,17 +1,11 @@
 (function(){
 
 	function BubbleSort(arr){
-		this.init(arr);
+		this.sort(arr);
 	}
 
 	BubbleSort.prototype = {
-		swap: function(arr, first, last){
-			var temp = arr[first];
-
-			arr[first] 	= iarr[second];
-			arr[second] = temp;
-		},
-		init: function(arr){
+		sort: function(arr){
 			var i,
 				j,
 				len = arr.length;
@@ -25,7 +19,7 @@
 
 			return arr;	
 		},
-		countdown: function(arr){
+		rev_sort: function(arr){
 			var i,
 				j,
 				len = arr.length;
@@ -38,6 +32,12 @@
 				}
 			}
 			return arr;
+		},
+		swap: function(arr, first, last){
+			var temp = arr[first];
+
+			arr[first] 	= iarr[second];
+			arr[second] = temp;
 		},
 		toString: function(arr){
 			console.dir(arr);
