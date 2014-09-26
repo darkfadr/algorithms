@@ -1,7 +1,7 @@
 (function(){
 
 	function MergeSort(arr){
-		this.sort(arr);
+		this.recursive_sort(arr);
 	}
 
 	MergeSort.prototype = {
@@ -26,8 +26,15 @@
 
 			return work[0];	
 		},
-		recursive_sort: function(){
+		recursive_sort: function(arr){
+			if(arr.length < 2)
+				return arr;
 
+			var mid 	= Math.floor(ar.length/2),
+				left 	= arr.slice(0, mid),
+				right	= arr.slice(mid);
+
+			return recursive_sort(merge(left), merge(right));
 		},
 		merge: function(left, right){
 			var result = [];
