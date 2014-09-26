@@ -1,3 +1,5 @@
+package genericlinkedlist;
+
 public class Pair<T, S>
 {
     private T first;
@@ -28,5 +30,10 @@ public class Pair<T, S>
     {
         second = v;
     }
-
+    
+    @Override
+    public String toString()
+    {
+        return "[" + first + ", " + second + "]";
+    }
 }
