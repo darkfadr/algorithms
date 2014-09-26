@@ -2,23 +2,26 @@
 	function BinarySearch(){}
 
 	BinarySearch.prototype = {
-		search: function(arr, target, start, end){
-			var middle = Math.floor((start+end)/2),
-				value  = arr[middle];
+		search: function(arr, target){
+			var start 	= 0,
+				stop 	= arr.length-1,
+				middle 	= this.center(start, stop);
 			
-			if(start > end)
-				return -1; //invalid entry
-			if(value > target)
-				this.search(arr, target, start, middle-1);
-			if(value < target)
-				this.search(arr, target, middle+1, end);
+			while(arr[middle] != target && start > stop){
+				//divide and conquer
+				if(target < arr[middle]){
+					stop = middle-1;
+				} else if(target > arr[middle]){
+					start = middle + 1;
+				}
 
-			return middle;
+				middle 	= this.center(start, stop);
+			}
 
-
+			return (arr[middle] !== target) ? -1 : middle;
 		},
-		getIndex: function(arr, target){
-			return this.search(arr, target, 0, arr.length-1);	
+		center: function(left, right){
+			return Math.floor((left+right)/2);
 		}
 	};
 });
