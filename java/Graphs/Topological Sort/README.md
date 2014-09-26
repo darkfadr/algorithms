@@ -19,16 +19,14 @@ x y
 y z  
 z x  
 
-
-
 ##Output
 The result of running
-  java -jar tsort.jar file1.txt file2.txt file3.txt
-would be something like:
-
-file1.txt: a, c, b
-file2.txt: cop2210, mad2104, cop3337, cop3530
-file3.txt: graph has a cycle: x->y->z->x
+  java -jar tsort.jar file1.txt file2.txt file3.txt  
+  would be something like:  
+  
+file1.txt: a, c, b  
+file2.txt: cop2210, mad2104, cop3337, cop3530  
+file3.txt: graph has a cycle: x->y->z->x  
 
 ## Installation
  mvn clean compile assembly:single
