@@ -11,8 +11,8 @@ public class SieveOfEratosthenes
      * After 2, the algorithm picks up the next non-false number, or 3, and does
      * the same. When the algorithm reaches 4, it is skipped, because it is 
      * marked as prime by 2 and goes directly to 5 which was not marked as false. 
-     * by 2 or 3. This continues all the way to sqrt(n) (10 for n = 100), in 
-     * which then whatever is left as true is a prime number.
+     * This continues all the way to sqrt(n) (10 for n = 100), in which then 
+     * whatever is left as true is a prime number.
      * 
      * @param n high bound to find the primes of.
      * @return a boolean array with array[i] true if 'i' is a prime number.
