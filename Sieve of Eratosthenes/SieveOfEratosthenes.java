@@ -14,6 +14,8 @@ public class SieveOfEratosthenes
      * This continues all the way to sqrt(n) (10 for n = 100), in which then 
      * whatever is left as true is a prime number.
      * 
+     * @author Guido Ruiz (blastoy)
+     * 
      * @param n high bound to find the primes of.
      * @return a boolean array with array[i] true if 'i' is a prime number.
      */
