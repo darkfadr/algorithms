@@ -1,10 +1,12 @@
 (function(){
 
 	function QuickSort(arr){
+		this._arr = arr;
 		this.sort(arr);
 	}
 
 	QuickSort.prototype = {
+		constructor: QuickSort,
 		sort: function(arr, left, right){
 			var index;
 
@@ -12,7 +14,7 @@
 				//in case left and right wasn't provided
 				//can be replaces using .apply()
 				left 	= typeof left != 'number' ? 0 : left;
-				right 	= typeof right != 'number' ? arr.length -1 : right;  
+				right 	= typeof right != 'number' ? arr.length -1 : right;
 
 				index = this.partition(arr, left, right);
 
@@ -25,7 +27,7 @@
 				}
 			}
 
-			return arr;	
+			return arr;
 		},
 		partition: function(arr, left, right){
 			var i = left,
@@ -57,8 +59,8 @@
 			arr[first] 	= iarr[second];
 			arr[second] = temp;
 		},
-		toString: function(arr){
-			console.dir(arr);
+		toString: function(){
+			console.dir(this._arr);
 		}
 	}
 });
