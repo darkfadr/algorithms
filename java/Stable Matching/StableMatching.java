@@ -24,7 +24,7 @@ public class StableMatching
             Female proposal = females.get(males.get(man).getPreffered());
             males.get(man).setDate(proposal.getName());
             
-            boolean rejected = proposal.isBetter(man); // returns null if rejected, old date if accepted
+            boolean rejected = proposal.isBetter(man);
             
             if(rejected)
             {

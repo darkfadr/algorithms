@@ -14,7 +14,7 @@ public class Female extends Person
     
     public boolean isBetter(String newMan)
     {
-        if(myDate == null) // no one will get rejected
+        if(myDate == null)
         {
             myDate = newMan;
             myDateRank = preferences.indexOf(newMan);
@@ -27,7 +27,7 @@ public class Female extends Person
         
         int newManRank = preferences.indexOf(newMan);
         
-        if(newManRank < myDateRank) // old date is rejected
+        if(newManRank < myDateRank) 
         {
             myRejectedDate = myDate;
             myDate = newMan;
@@ -37,7 +37,7 @@ public class Female extends Person
                 k = myDateRank;
         }
         else
-            myRejectedDate = newMan; // new date is rejected
+            myRejectedDate = newMan; 
   
         return true;
     }
