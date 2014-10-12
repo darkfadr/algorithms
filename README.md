@@ -4,7 +4,9 @@
 
 Implementations of various algorithms in Java and JavaScript
 
-//TODO: associate sorting algortithms to Array class
+//TODO: Pacckage into Node module
+		Provide callbacks 
+		
 #Java
 
 
@@ -15,6 +17,7 @@ Implementations of various algorithms in Java and JavaScript
 *Merge Sort
 *Inserstion Sort
 *Selection Sort
+*Radix Sort
 
 
 ####Searching
