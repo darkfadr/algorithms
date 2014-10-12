@@ -1,10 +1,12 @@
 (function(){
 
 	function InsertionSort(arr){
+		this._arr = arr;
 		this.sort(arr);
 	}
 
 	InsertionSort.prototype = {
+		constructor: InsertionSort,
 		sort: function(arr){
 			var i,
 				j,
@@ -19,10 +21,10 @@
 				}
 			}
 
-			return arr;	
+			return arr;
 		},
 		toString: function(arr){
-			console.dir(arr);
+			console.dir(this._arr);
 		}
 	}
 });

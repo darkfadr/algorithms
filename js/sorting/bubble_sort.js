@@ -1,10 +1,12 @@
 (function(){
 
 	function BubbleSort(arr){
+		this._arr = arr;
 		this.sort(arr);
 	}
 
 	BubbleSort.prototype = {
+		constructor: BubbleSort,
 		sort: function(arr){
 			var i,
 				j,
@@ -17,7 +19,7 @@
 				}
 			}
 
-			return arr;	
+			return arr;
 		},
 		rev_sort: function(arr){
 			var i,
@@ -39,8 +41,8 @@
 			arr[first] 	= iarr[second];
 			arr[second] = temp;
 		},
-		toString: function(arr){
-			console.dir(arr);
+		toString: function(){
+			console.dir(this._arr);
 		}
 	}
 });

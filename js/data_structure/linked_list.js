@@ -2,7 +2,7 @@
 	function LinkedList(){
 		this._head 	= null;
 		this._tail 	= null;
-		this._count = 0;
+		this._length = 0;
 		
 		this.prototype = {
 			add: function(data){
@@ -16,7 +16,7 @@
 					this._tail._next = node;
 				}
 
-				this._count++;
+				this._length++;
 			},
 			remove: function(index){
 				var i 	 = 0,
@@ -34,11 +34,11 @@
 						prev._next = node._next;
 					}
 					
-					this._count++;
+					this._length++;
 				}
 			},
 			size: function(){
-				return this._count;
+				return this._length;
 			}
 		}
 	}

@@ -1,10 +1,12 @@
 (function(){
 
 	function MergeSort(arr){
+		this._arr = arr;
 		this.recursive_sort(arr);
 	}
 
 	MergeSort.prototype = {
+		constructor: MergeSort,
 		sort: function(arr){
 			var work = [];
 
@@ -24,7 +26,7 @@
 				work[j] = [];  //in case of odd number
 			}
 
-			return work[0];	
+			return work[0];
 		},
 		recursive_sort: function(arr){
 			if(arr.length < 2)
@@ -50,12 +52,12 @@
 			result = result.concat(left).concat(right);
 
 			left.splice(0, left.length);
-			right.splice(0, right.length);	
+			right.splice(0, right.length);
 
 			return result;
 		},
-		toString: function(arr){
-			console.dir(arr);
+		toString: function(){
+			console.dir(this._arr);
 		}
 	}
 });

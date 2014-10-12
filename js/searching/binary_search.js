@@ -1,12 +1,16 @@
 (function(){
-	function BinarySearch(){}
+	function BinarySearch(arr, target){
+		this._arr 		= arr;
+		this._target 	= target;
+	}
 
 	BinarySearch.prototype = {
+		constructor: BinarySearch,
 		search: function(arr, target){
 			var start 	= 0,
 				stop 	= arr.length-1,
 				middle 	= this.center(start, stop);
-			
+
 			while(arr[middle] != target && start > stop){
 				//divide and conquer
 				if(target < arr[middle]){
