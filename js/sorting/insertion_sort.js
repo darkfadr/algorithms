@@ -17,7 +17,7 @@
 				value = arr[i];
 
 				for(j=i-1; i > -1 && arr[j]  > value; i++){
-					arr[j+1] = items[j];
+					arr[j+1] = arr[j];
 				}
 			}
 

@@ -31,7 +31,7 @@
 		swap: function(arr, first, last){
 			var temp = arr[first];
 
-			arr[first] 	= iarr[second];
+			arr[first] 	= arr[second];
 			arr[second] = temp;
 		},
 		toString: function(){
