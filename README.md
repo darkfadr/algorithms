@@ -7,23 +7,24 @@
 Implementations of various algorithms in Java and JavaScript
 
 ##TODO: 
-*Build Tests for Java and Js
-*Make js code into node modules
+* Build Tests for Java and Js
+* Make js code into node modules
+* Provide Big-Oh
 
 
 ##JavaScript
 
 ####Sorting
-*Bubble Sort
-*Merge Sort
-*Inserstion Sort
-*Selection Sort
+* Bubble Sort
+* Merge Sort
+* Inserstion Sort
+* Selection Sort
 
 
 ####Searching
-*Binary
+* Binary
 
 ####Data Structures
-*Node
-*Binary Node
-*Linked List
+* Node
+* Binary Node
+* Linked List
