@@ -7,6 +7,16 @@
 *
 */
 
+export fucntion run (appdir){
+    
+}
+
+
+
+
+
+
+
 var nodeDSA = function(){
 	var Sort 		= function(){},
 		Search 		= function(){},
@@ -178,4 +188,3 @@ var nodeDSA = function(){
 	}
 }
 
-module.exports = nodeDSA;

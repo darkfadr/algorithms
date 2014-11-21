@@ -28,4 +28,7 @@
 			return Math.floor((left+right)/2);
 		}
 	};
+
+console.log('testing');
+    new BinarySearch([1, 2, 3, 4, 5, 6, 7 ,8 ], 3);
 });
